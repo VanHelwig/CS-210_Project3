@@ -68,6 +68,42 @@ Peas occurred 6 time(s).
 Zucchini ********
 Cranberries *********
 ```
+## Final Reflection
+
+### Project Summary
+
+This project was designed to help a small grocery store track and analyze purchasing behavior based on daily transaction logs. It solves the problem of understanding item popularity by calculating and displaying item frequency from a text file.
+
+### What I Did Well
+
+- Implemented clean, modular code using object-oriented principles.
+- Incorporated input validation and exception handling for robustness.
+- Followed consistent formatting and documentation to support readability.
+
+### Areas for Enhancement
+
+- **Efficiency**: Reading large files could be optimized with buffered reading or parallel processing if needed.
+- **Security**: Input sanitation could be expanded for user inputs with whitespace or casing irregularities.
+- **Portability**: Future improvements might include platform-independent file path handling and better internationalization support.
+
+### Most Challenging Code & Solutions
+
+The most challenging aspect was structuring the program to gracefully handle bad input files and user input errors without crashing. I overcame this by using `try/catch` blocks and validating all user input via `cin.fail()` and bounds checks. I also leaned on official C++ documentation and classroom zyBooks chapters on file I/O and classes.
+
+### Transferable Skills
+
+- Working with file I/O and data structures like `std::map`
+- Designing maintainable, reusable classes
+- Using Visual Studio and following standard C++ workflows
+- Writing robust menu-driven console applications
+
+### Code Maintainability & Readability
+
+To ensure long-term maintainability:
+- I used clear naming conventions and modular functions.
+- Added inline comments for all methods.
+- Kept class responsibilities clearly separated from main logic.
+- Created a single point of data truth (`map<string, int>`) for reliability and simplicity.
 
 ## Author
 
